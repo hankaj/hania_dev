@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hania Jarlaczyńska | AI Engineer</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circuit-bg"></div>
+    
+    <header>
+        <h1><span class="name-part" id="firstName">HANIA</span> JARLACZYŃSKA</h1>
+        <div class="subtitle">AI ENGINEER</div>
+    </header>
+    
+    <nav>
+        <div class="nav-container">
+            <button class="nav-btn active" onclick="showPage('home')">Home</button>
+            <button class="nav-btn" onclick="showPage('experience')">Experience</button>
+            <button class="nav-btn" onclick="showPage('achievements')">Achievements</button>
+            <button class="nav-btn" onclick="showPage('publications')">Publications</button>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <section class="section">
+                <div class="deco-circle deco-circle-1"></div>
+                <h2>Welcome</h2>
+                <div class="home-intro">
+                    <p>Hey! I'm <strong>Hania Jarlaczyńska</strong>, an AI Engineer. I've been in the AI space for the past 6 years, moving through different roles — from research, through strong client-facing work, to productizing AI solutions at the scale of millions of products. I also enjoy talking about it at conferences.</p>
+                    <p style="margin-top: 20px;">When I'm not in front of a computer, I run, cycle, and train gymnastics.</p>
+                    <div class="cta">Collaboration? Let's get in touch.</div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Experience Page -->
+        <div id="experience" class="page">
+            <section class="section">
+                <div class="deco-circle deco-circle-1"></div>
+                <h2>Work Experience</h2>
+                <div class="item">
+                    <h3>AI Engineer</h3>
+                    <h4>Tesco Technology</h4>
+                    <p><em>March 2025 – Present</em></p>
+                    <p>Co-developed Tesco's Product Intelligence platform to operationalize AI for internal teams. Designed and tested GenAI solutions using RAG and few-shot prompting techniques. Built services in Python and Java, deployed with Docker/Kubernetes. Used Azure AI, PostgreSQL, Couchbase, with monitoring via Splunk and Zendesk.</p>
+                    <div>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Azure AI</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">GenAI</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Data and Software Engineer</h3>
+                    <h4>Unit8</h4>
+                    <p><em>January 2024 – March 2025</em></p>
+                    <p>Worked on custom advanced client use case on Palantir Foundry utilizing Large Language Models to help in carbon footprint calculations. Developed chatbot application on Microsoft Azure using Generative AI and Retrieval Augmented Generation with technologies such as Python, Bicep, FastAPI and React.</p>
+                    <div>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Palantir Foundry</span>
+                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">LLMs</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">React</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Deep Learning Framework Software Intern</h3>
+                    <h4>Intel Corporation</h4>
+                    <p><em>July 2022 – December 2023</em></p>
+                    <p>Built expertise on Graph Neural Networks and DGL, Deep Graph Library built on top of PyTorch and TensorFlow. Contributed to productization of DGL solution for Path-based GNNs which generated 4x speedup compared to the base algorithm. Took part in meetings with clients, prepared presentations and knowledge sharings. Prepared codebase, ran benchmarks and performed detailed results comparison of GNN distributed training algorithms on AWS. Contributed to MXNet Deep Learning framework mostly in the field of operator fusion and quantization.</p>
+                    <div>
+                        <span class="tech-tag">GNN</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">DGL</span>
+                        <span class="tech-tag">MXNet</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2>Education</h2>
+                <div class="item">
+                    <h3>Master of Engineering</h3>
+                    <h4>AGH University of Kraków</h4>
+                    <p><em>Computer Science and Intelligent Systems, 2020 – 2025</em></p>
+                    <p>Master's thesis: Knowledge Graphs for Retrieval-Augmented Generation (graduated with honours). Engineer's thesis: Graph Neural Networks in Recommendation Systems (graduated with honours). Awarded the academic scholarship three times for highest GPA and academic research. Active member of student research groups focused on AI and machine learning.</p>
+                </div>
+                <div class="item">
+                    <h3>Erasmus+ Exchange</h3>
+                    <h4>Universidad de Castilla-La Mancha, Spain</h4>
+                    <p><em>September 2021 – January 2022</em></p>
+                    <p>One semester exchange program studying Computer Engineering.</p>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Achievements Page -->
+        <div id="achievements" class="page">
+            <section class="section">
+                <div class="deco-circle deco-circle-1"></div>
+                <h2>Achievements</h2>
+                <div class="item">
+                    <h3>🏆 1st Place – ensambleAI Hackathon</h3>
+                    <p><em>March 2025</em></p>
+                    <p>Led team to first place developing an AI agent for a turn-based, player-versus-player strategy game featuring ships, planets, resource management, and strategic elements requiring smart decision-making, efficient navigation, and combat algorithms.</p>
+                </div>
+                <div class="item">
+                    <h3>👩‍💼 Leadership in Tech Academy</h3>
+                    <p>Selected as one of 20 girls from Poland for a one-year program focused on leadership development in the technology sector.</p>
+                </div>
+                <div class="item">
+                    <h3>🚀 First Ascent – Milan Tech Workshops</h3>
+                    <p>Selected as one of 20 best students from Poland to participate in advanced technology workshops in Milan.</p>
+                </div>
+                <div class="item">
+                    <h3>🎓 Honours Degrees</h3>
+                    <p>Graduated with honours for both Bachelor's and Master's theses in Computer Science and Intelligent Systems.</p>
+                </div>
+                <div class="item">
+                    <h3>📚 Academic Scholarships</h3>
+                    <p>Awarded academic scholarship three times for highest GPA and academic research contributions at AGH University of Kraków.</p>
+                </div>
+                <div class="item">
+                    <h3>🚀 AGH Space Systems Competition Wins</h3>
+                    <p>Multiple achievements in student rocket competitions as part of AGH Space Systems team.</p>
+                </div>
+            </section>
+        </div>
+
+        
+        <!-- Publications Page -->
+        <div id="publications" class="page">
+            <section class="section">
+                <h2>Publications</h2>
+                <div class="item">
+                    <h3>Differentially Private Federated Learning for High-Accuracy Carbon Footprint Prediction that Protects Sensitive Industrial Data</h3>
+                    <p><em>NeurIPS 2025</em></p>
+                    <p>Research on privacy-preserving machine learning techniques for industrial applications, combining federated learning with differential privacy to enable collaborative AI while protecting sensitive data.</p>
+                </div>
+                <div class="item">
+                    <h3>AI w firmie: FOMO i pośpiech to źli doradcy</h3>
+                    <p><em>XYZ, December 2025</em></p>
+                    <p>Article discussing best practices for AI adoption in business, warning against hasty implementation driven by fear of missing out.</p>
+                </div>
+                <div class="item">
+                    <h3>Conference Talk - AGH CYFRONET Open Days</h3>
+                    <p>Speaker presenting to high school students and other audiences on AI and space systems topics, sharing insights from research and practical applications.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="social-links">
+            <a href="mailto:hania.jarlaczynska@gmail.com" class="social-link" aria-label="Email">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </a>
+            <a href="https://instagram.com/yourusername" target="_blank" class="social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+            <a href="https://linkedin.com/in/jarlaczynska" target="_blank" class="social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>
+            <a href="https://github.com/hankaj/" target="_blank" class="social-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+        <p style="font-family: 'Orbitron', sans-serif; font-size: 1.2em; color: #FF1493;">
+            © 2026 HANIA JARLACZYŃSKA | AI ENGINEER
+        </p>
+        <p style="margin-top: 10px; color: #2C3E50;">
+            Turning AI ideas into real-world impact
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
