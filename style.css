@@ -277,6 +277,18 @@ h2::after {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
+.read-more {
+    font-family: 'Orbitron', sans-serif;
+    color: #FF1493;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
 .home-intro {
     font-size: 1.2em;
     line-height: 2;
