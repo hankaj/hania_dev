@@ -269,7 +269,7 @@ h2::after {
     display: inline-block;
     background: linear-gradient(135deg, #FF69B4, #FF1493);
     color: white;
-    padding: 5px 15px;
+    padding: 4px 14px;
     margin: 5px;
     border-radius: 20px;
     font-size: 0.80em;
