@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap');
 
+:root {
+    --h1-size: clamp(1.5rem, 6vw, 3.5rem);
+    --h2-size: clamp(1.5rem, 5vw, 2.5rem);
+    --h3-size: clamp(1.1rem, 3vw, 1.5rem);
+    --h4-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    --body-size: clamp(0.9rem, 2vw, 1rem);
+    --intro-size: clamp(1rem, 2.5vw, 1.2rem);
+    --nav-size: clamp(0.8rem, 2vw, 1.1rem);
+    --tag-size: clamp(0.7rem, 1.5vw, 0.8rem);
+    --subtitle-size: clamp(0.9rem, 3vw, 1.8rem);
+    
+    --h1-spacing: clamp(0.5px, 1vw, 8px);
+    --h2-spacing: clamp(2px, 0.8vw, 4px);
+    --subtitle-spacing: clamp(1px, 1vw, 6px);
+    --nav-spacing: clamp(1px, 0.4vw, 2px);
+    
+    --section-padding: clamp(20px, 5vw, 40px);
+    --item-padding: clamp(15px, 4vw, 25px);
+    --header-padding: clamp(30px, 8vw, 60px);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +34,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     min-height: 100vh;
+    font-size: var(--body-size);
 }
 
 .circuit-bg {
@@ -31,7 +53,7 @@ body {
 
 header {
     position: relative;
-    padding: 60px 20px 30px;
+    padding: var(--header-padding) 20px 30px;
     text-align: center;
     background: linear-gradient(135deg, rgba(125, 229, 237, 0.9), rgba(255, 105, 180, 0.7));
     border-bottom: 4px solid #FF69B4;
@@ -40,15 +62,17 @@ header {
 
 h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 3.5em;
+    font-size: var(--h1-size);
     font-weight: 900;
     color: #FF1493;
     text-transform: uppercase;
-    letter-spacing: 8px;
+    letter-spacing: var(--h1-spacing);
     text-shadow: 
         3px 3px 0 #7DE5ED,
         6px 6px 0 rgba(0,0,0,0.1);
     margin-bottom: 10px;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .name-part {
@@ -97,13 +121,13 @@ h1 {
 
 .subtitle {
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.8em;
+    font-size: var(--subtitle-size);
     color: #2C3E50;
-    letter-spacing: 6px;
+    letter-spacing: var(--subtitle-spacing);
     border-top: 3px dotted #2C3E50;
     border-bottom: 3px dotted #2C3E50;
     display: inline-block;
-    padding: 10px 40px;
+    padding: 10px clamp(20px, 5vw, 40px);
     margin-top: 20px;
 }
 
@@ -129,12 +153,12 @@ nav {
     font-family: 'Orbitron', sans-serif;
     background: transparent;
     border: none;
-    padding: 20px 30px;
-    font-size: 1.1em;
+    padding: 20px clamp(15px, 3vw, 30px);
+    font-size: var(--nav-size);
     color: #2C3E50;
     cursor: pointer;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: var(--nav-spacing);
     transition: all 0.3s ease;
     position: relative;
     font-weight: 700;
@@ -191,7 +215,7 @@ nav {
 
 .section {
     background: rgba(255, 255, 255, 0.85);
-    padding: 40px;
+    padding: var(--section-padding);
     border-radius: 20px;
     border: 3px solid #FF69B4;
     box-shadow: 
@@ -206,11 +230,11 @@ nav {
 
 h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.5em;
+    font-size: var(--h2-size);
     color: #FF1493;
     margin-bottom: 30px;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: var(--h2-spacing);
     position: relative;
     padding-bottom: 15px;
 }
@@ -227,7 +251,7 @@ h2::after {
 
 .item {
     background: rgba(125, 229, 237, 0.2);
-    padding: 25px;
+    padding: var(--item-padding);
     margin: 20px 0;
     border-left: 6px solid #FF69B4;
     border-radius: 10px;
@@ -243,14 +267,14 @@ h2::after {
 .item h3 {
     font-family: 'Orbitron', sans-serif;
     color: #2C3E50;
-    font-size: 1.5em;
+    font-size: var(--h3-size);
     margin-bottom: 10px;
 }
 
 .item h4 {
     font-family: 'Orbitron', sans-serif;
     color: #FF1493;
-    font-size: 1.1em;
+    font-size: var(--h4-size);
     margin-bottom: 8px;
 }
 
@@ -272,7 +296,7 @@ h2::after {
     padding: 4px 14px;
     margin: 5px;
     border-radius: 20px;
-    font-size: 0.80em;
+    font-size: var(--tag-size);
     font-weight: bold;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
@@ -307,9 +331,8 @@ h2::after {
     border-color: #FF69B4;
 }
 
-
 .home-intro {
-    font-size: 1.2em;
+    font-size: var(--intro-size);
     line-height: 2;
     color: #2C3E50;
 }
@@ -322,7 +345,7 @@ h2::after {
 .cta {
     background: linear-gradient(135deg, #FF69B4, #FF1493);
     color: white;
-    padding: 15px 30px;
+    padding: clamp(12px, 2vw, 15px) clamp(24px, 4vw, 30px);
     border-radius: 10px;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
@@ -333,6 +356,7 @@ h2::after {
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-size: var(--nav-size);
 }
 
 .cta:hover {
@@ -407,26 +431,13 @@ footer {
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.5em;
-        letter-spacing: 4px;
-    }
-    
-    .subtitle {
-        font-size: 1.2em;
-        letter-spacing: 3px;
-    }
-    
-    h2 {
-        font-size: 2em;
-    }
-    
-    .section {
-        padding: 25px;
-    }
-    
     .nav-btn {
-        padding: 15px 20px;
-        font-size: 0.9em;
+        padding: 15px clamp(12px, 2.5vw, 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-btn {
+        padding: 12px clamp(10px, 2vw, 15px);
     }
 }
