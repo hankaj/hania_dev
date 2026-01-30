@@ -456,6 +456,39 @@ footer {
     max-width: 100%;
 }
 
+footer p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: #FF1493;
+    line-height: 1.6;
+}
+
+.footer-text {
+    display: inline-block;
+}
+
+.footer-separator {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+@media (max-width: 600px) {
+    footer p {
+        font-size: clamp(0.9rem, 3.5vw, 1.05rem);
+    }
+    
+    .footer-separator {
+        display: block;
+        height: 0;
+        margin: 0;
+        visibility: hidden;
+    }
+    
+    .footer-text {
+        display: block;
+    }
+}
+
 .social-links {
     display: flex;
     justify-content: center;
