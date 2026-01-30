@@ -71,8 +71,9 @@ h1 {
         3px 3px 0 #7DE5ED,
         6px 6px 0 rgba(0,0,0,0.1);
     margin-bottom: 10px;
-    word-break: break-word;
-    hyphens: auto;
+    word-break: keep-all;
+    hyphens: none;
+    text-wrap: balance;
 }
 
 .name-part {
