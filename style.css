@@ -103,7 +103,38 @@ h1 {
     animation: pixelate 0.4s steps(8);
 }
 
+.pixelate-reverse {
+    animation: pixelate-reverse 0.4s steps(8);
+}
+
 @keyframes pixelate {
+    0% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+    25% {
+        filter: blur(2px);
+        opacity: 0.8;
+    }
+    50% {
+        filter: blur(4px) contrast(150%);
+        opacity: 0.6;
+        text-shadow: 
+            -2px -2px 0 #FF1493,
+            2px 2px 0 #00FFFF,
+            0 0 10px #7DE5ED;
+    }
+    75% {
+        filter: blur(2px);
+        opacity: 0.8;
+    }
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes pixelate-reverse {
     0% {
         filter: blur(0px);
         opacity: 1;
